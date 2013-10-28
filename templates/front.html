@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br><br>
+  {% endfor %}
+
+  <div class = "age">
+    {{age}}
+  </div> 
+
+{% endblock %}
+4 <a href="/blog/newpost" class="main-link">
+    New Post
+ </a>
